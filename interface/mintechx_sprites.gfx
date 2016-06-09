@@ -1,6 +1,6 @@
 spriteTypes = {
     SpriteType = {
-        name = "GFX_jet_cas2_medium"
-        texturefile = "gfx/interface/technologies/jet_fighter2.dds"
+        name = "GFX_jet_attack1_medium"
+        texturefile = "gfx/interface/technologies/jet_fighter1.dds"
     }
 }

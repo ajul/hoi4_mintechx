@@ -1,0 +1,155 @@
+equipments = {
+    cv_jet_fighter_equipment = {
+		is_archetype = yes
+		is_buildable = no
+		type = fighter
+		group_by = archetype
+		sprite = light_plane
+        carrier_capable = yes
+        default_carrier_composition_weight = 1
+		
+		interface_category = interface_category_air
+		
+		# Fighter
+		interface_overview_category_index = 1
+
+		upgrades = {
+			cv_plane_gun_upgrade
+			cv_plane_range_upgrade
+			plane_engine_upgrade
+			plane_reliability_upgrade
+		}
+
+		air_superiority = 1
+		reliability = 0.8
+
+		# Air vs Navy - low damage / high hit chance / easy to hurt
+		naval_strike_attack = 0.5
+		naval_strike_targetting = 1.0
+		
+		build_cost_ic = 36.4
+		resources = {
+			aluminium = 3
+			tungsten = 3
+			rubber = 1
+		}
+		
+		manpower = 40
+	}
+
+    cv_jet_fighter_equipment_2 = {
+        archetype = cv_jet_fighter_equipment
+        
+        air_range = 1760
+		maximum_speed = 855
+		air_agility = 62
+		air_attack = 36
+		air_defence = 22
+        
+        priority = 35
+    }
+    
+    jet_attack_equipment = {
+        is_archetype = yes
+		is_buildable = no
+		type = { cas fighter naval_bomber }
+		group_by = archetype
+		sprite = light_plane
+		
+		interface_category = interface_category_air
+		
+		# CAS
+		interface_overview_category_index = 0
+
+		upgrades = {
+			plane_cas_upgrade
+			plane_range_upgrade
+			plane_engine_upgrade
+			plane_reliability_upgrade
+		}
+
+		air_superiority = 1
+		reliability = 0.8
+		
+		# Air vs Ground
+		air_ground_attack = 1.0
+
+		# Air vs Navy - medium damage / high hit chance / medium to hurt
+		naval_strike_attack = 1.0
+		naval_strike_targetting = 1.0
+		
+		build_cost_ic = 30
+		resources = {
+			oil = 3
+			aluminium = 3
+			rubber = 1
+		}
+		
+		manpower = 20
+    }
+    
+    jet_attack_equipment_1 = {
+        archetype = jet_attack_equipment
+        
+        air_range = 2200
+		maximum_speed = 950
+		air_agility = 45
+		air_attack = 20
+		air_defence = 30
+        
+        priority = 55
+    }
+    
+    cv_jet_attack_equipment = {
+        is_archetype = yes
+		is_buildable = no
+		type = { cas fighter naval_bomber }
+		group_by = archetype
+		sprite = light_plane
+        carrier_capable = yes
+        default_carrier_composition_weight = 1
+		
+		interface_category = interface_category_air
+		
+		# CAS
+		interface_overview_category_index = 0
+
+		upgrades = {
+			plane_cas_upgrade
+			plane_range_upgrade
+			plane_engine_upgrade
+			plane_reliability_upgrade
+		}
+
+		air_superiority = 1
+		reliability = 0.8
+		
+		# Air vs Ground
+		air_ground_attack = 30.0
+
+		# Air vs Navy - medium damage / high hit chance / medium to hurt
+		naval_strike_attack = 3.0
+		naval_strike_targetting = 1.5
+		
+		build_cost_ic = 30
+		resources = {
+			oil = 3
+			aluminium = 3
+			rubber = 1
+		}
+		
+		manpower = 20
+    }
+    
+    cv_jet_attack_equipment_1 = {
+        archetype = cv_jet_attack_equipment
+        
+        air_range = 1760
+		maximum_speed = 855
+		air_agility = 38
+		air_attack = 20
+		air_defence = 33
+        
+        priority = 57
+    }
+}
